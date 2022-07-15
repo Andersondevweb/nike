@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+
+        section{width: 80%;
+        height: 500px;
+    background: orange;
+margin: 5% auto;
+display: flex;}
+
+article{width: 33.33%;
+height: 500px;}
+
+section>article:first-child{background: turquoise;
+position: absolute;
+bottom: 0;
+top: 0;}
+
+section>article:nth-child(2){background: greenyellow;
+position: relative;
+top: 0;
+}
+
+section>article:last-child{background: tomato;}
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <section>
+        <article>Absolute</article>
+        <article>Relative</article>
+        <article>Fixed</article>
+    </section>
+
+
+</body>
+</html>
